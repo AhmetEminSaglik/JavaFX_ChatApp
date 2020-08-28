@@ -1,0 +1,102 @@
+/*
+Gri : #738796
+*/
+
+.FontBackground{
+    -fx-background-color: white;
+}  
+.avatar .decoration{
+    -fx-fill: transparent;
+} 
+.profilBackground{
+    -fx-background-image: url(../image/background.jpg);
+    -fx-background-repeat: no-repeat;
+    -fx-background-size: cover;
+    -fx-background-color: red;
+} 
+.topLine{
+    -fx-border-color: #738796;
+    -fx-border-width: 1 0 0 0;
+}
+.rightLine{
+    -fx-border-color: #738796;
+    -fx-border-width: 0 1 0 0;
+}
+
+.bottomLine{
+    -fx-border-color: #738796;
+    -fx-border-width: 0 0 1 0;
+}
+
+.LeftLine{
+    -fx-border-color: #738796;
+    -fx-border-width: 0 0 0 1;
+}
+
+.myButtons:hover{
+    -fx-background-color: #D4D5D6;
+
+}
+.grayBackgroundColor{ /*Hocanın verdiği isim : MessageSend */
+    -fx-background-color: #D8D6D8;
+
+}
+.MessageText{
+    -fx-background-color: #FFFFFF;
+    -fx-border-color: #738796;
+    -fx-border-radius: 5; 
+
+}
+.search{
+    -fx-border-color: #738796;
+    -fx-border-radius: 50%; 
+
+}
+.scroll-pane:fitToWidth{
+    -fx-background-color:   transparent;
+}
+.scroll-pane:fitToWidth .viewport{
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical{
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button{ /* ok işaretinin arka plandaki kutucuğu kaldırıryoruz */
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .decrement-button .decrement-arrow{ /* ok işaretini kaldırıyoruz */
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .increment-button{
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .increment-button .increment-arrow{
+    -fx-background-color: transparent;
+}
+.scroll-pane:fitToWidth .scroll-bar:vertical .thumb{
+    -fx-background-color: #C1C1C1;
+    -fx-background-insets: 0 5 0 3; /*bar'ın ayarladık  yukardan ve aşağıdan pading yok sağdan ve soldan 5 brim kısaltılıyor */
+}
+.count{
+    -fx-background-color: #3498db;
+    -fx-background-radius: 100%;
+    -fx-text-fill: #FFFFFF;
+}
+.nonSelecetion{
+    -fx-border-color:  #2ACB71;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: white;
+    -fx-border-width: 0 0 0 5;
+}
+.nonSelecetion:hover{
+    -fx-background-color: #F6F5F7;
+
+    -fx-border-color: darkgray;
+    -fx-border-width: 0 0 0 5;
+}
+.Selection{
+    -fx-background-color: #D8D6D8;
+    -fx-border-color:  #2ACB71;
+    -fx-border-width: 0 0 0 5;
+
+}

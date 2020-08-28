@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<?import com.gluonhq.charm.glisten.control.Avatar?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<fx:root alignment="CENTER_LEFT" prefHeight="80.0" spacing="10.0" styleClass="nonSelecetion" type="HBox" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Avatar fx:id="UserImage" radius="30.0">
+         <image>
+            <Image url="@../image/resim.jpg" />
+         </image>
+      </Avatar>
+      <VBox alignment="CENTER_LEFT" prefHeight="200.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER_LEFT" spacing="10.0">
+               <children>
+                  <Label fx:id="UserName" text="Ahmet Emin">
+                     <font>
+                        <Font size="16.0" />
+                     </font>
+                  </Label>
+                  <Circle fx:id="Online" fill="#1fff7e" radius="6.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+               </children>
+            </HBox>
+            <Label fx:id="Message" text="Gelen Mesaj" textFill="#738796" />
+         </children>
+      </VBox>
+      <VBox alignment="CENTER_LEFT">
+         <children>
+            <Label fx:id="Time" text="23.59" textFill="#738796" />
+            <StackPane minHeight="20.0" minWidth="20.0" prefHeight="20.0" prefWidth="20.0">
+               <children>
+                  <Label fx:id="MessageCount" alignment="CENTER" minHeight="25.0" minWidth="25.0" prefHeight="25.0" prefWidth="25.0" styleClass="count" text="+99" textFill="#738796" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </StackPane>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets left="12.0" right="12.0" />
+   </padding>
+</fx:root>
